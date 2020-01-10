@@ -4,7 +4,7 @@ Capture DB backup & copy to s3 bucket.
 ### Installation
 Add buildpack to your Heroku app
 ```
-heroku buildpacks:add https://github.com/svikramjeet/db-back-s3 --app <your_app>
+heroku buildpacks:add https://github.com/aamirpal/db-back-s3 --app <your_app>
 ```
 > Buildpacks are scripts that are run when your app is deployed.
 
@@ -37,7 +37,7 @@ and configure FREQUENCY. Paramenter `db` is used for naming convention when we c
 
 > For DNS backup
 `bash /app/vendor/dns-backup.sh domainname`
-Paramenter `domainname` is used for domain eg google.com, please donot add http:// or https.
+Paramenter `domainname` is used for domain eg google.com, and do not include http:// or https:// as prefix from domainname value.
 
 
 > For ENV backup
